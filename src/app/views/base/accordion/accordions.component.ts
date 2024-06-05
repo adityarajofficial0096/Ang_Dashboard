@@ -4,11 +4,11 @@ import { RowComponent, ColComponent, TextColorDirective, CardComponent, CardHead
 import { DocsExampleComponent } from '@docs-components/public-api';
 
 @Component({
-    selector: 'app-accordions',
-    templateUrl: './accordions.component.html',
-    styleUrls: ['./accordions.component.scss'],
-    standalone: true,
-    imports: [RowComponent, ColComponent, TextColorDirective, CardComponent, CardHeaderComponent, CardBodyComponent, DocsExampleComponent, AccordionComponent, AccordionItemComponent, TemplateIdDirective, AccordionButtonDirective, BgColorDirective]
+  selector: 'app-accordions',
+  templateUrl: './accordions.component.html',
+  styleUrls: ['./accordions.component.scss'],
+  standalone: true,
+  imports: [RowComponent, ColComponent, TextColorDirective, CardComponent, CardHeaderComponent, CardBodyComponent, DocsExampleComponent, AccordionComponent, AccordionItemComponent, TemplateIdDirective, AccordionButtonDirective, BgColorDirective]
 })
 export class AccordionsComponent {
 
@@ -18,7 +18,7 @@ export class AccordionsComponent {
     private sanitizer: DomSanitizer
   ) { }
 
-  getAccordionBodyText(value: string|number) {
+  getAccordionBodyText(value: string | number) {
     const textSample = `
       <strong>This is the <mark>#${value}</mark> item accordion body.</strong> It is hidden by
       default, until the collapse plugin adds the appropriate classes that we use to
