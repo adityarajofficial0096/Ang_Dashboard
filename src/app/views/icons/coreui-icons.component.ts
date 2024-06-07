@@ -21,7 +21,7 @@ import { DocsLinkComponent } from '@docs-components/public-api';
   ]
 })
 export class CoreUIIconsComponent implements OnInit {
-  public title = 'CoreUI Icons';
+  public title = 'Icons';
   public icons!: [string, string[]][];
 
   constructor(
